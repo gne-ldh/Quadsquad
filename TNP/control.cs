@@ -38,10 +38,10 @@ namespace TNP
                 var.obj1
                );
 
-            /*
+            
               int c = 0;
               int ran = 0;
-
+            /*
               for (int a = 1; a <= 125; a++)
               {
 
@@ -51,9 +51,11 @@ namespace TNP
                       "UPDATE student_record SET DEPARTMENT='" + var.obj1[c] +"'" 
   +                    " WHERE S_NO="+a
                       , TEMPS);
-                  if (c <= 7 && ran > 15)
+                  if (ran > 15)
                   {
                       c++;
+                    if (c >= 6)
+                        c = 0;
                       ran = 0;
                   }
                   start.ExecuteNonQuery();
@@ -67,7 +69,7 @@ namespace TNP
         }
         void campare_clear()
         {
-            for(int a=0;a<=campare.Length;a++)
+            for(int a=0;a<campare.Length;a++)
               { 
             campare[a] = false;
                 }
@@ -101,14 +103,19 @@ namespace TNP
               );
 
 
+            foreach (bool a in campare)
+            {
+                Console.WriteLine(a);
+            }
 
-            string sql = "SELECT * FROM student_record WHERE DEPARTMENT=" +
-        "'" +(campare[0]?var.obj1[0]:"") + "'"
-        +" or "+
+            string sql = "SELECT * FROM student_record WHERE DEPARTMENT IN" +
+        "('" +(campare[0]?var.obj1[0]:"") + "'"
+        +" , "+
 
-        "'" + (campare[1] ? var.obj1[1] : "") + "'"
-                +" or " +
-
+        "'" + (campare[1] ? var.obj1[1] : "") + "')"
+               
+               
+/*
 "'" + var.obj1[2] + "'"
         +" or " +
 
@@ -124,9 +131,9 @@ namespace TNP
 "'" + var.obj1[6] + "'"
 
 
-
+            */
                ;
-
+           
             MySqlConnection grid = new MySqlConnection(conn);
             grid.Open();
             DataSet ds = new DataSet();
@@ -151,7 +158,7 @@ namespace TNP
           //  sett[temp_] = comboBox1.Text;
             label1.Text += " " + comboBox1.Text;
             comboBox1.Items.RemoveAt(comboBox1.SelectedIndex);
-            campare[comboBox1.SelectedIndex] = true;
+            campare[comboBox1.SelectedIndex+1] = true;
            
         }
 
