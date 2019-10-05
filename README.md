@@ -11,7 +11,11 @@ It has used following applications:
 Steps to execute:
 
 *Navigate to the "TNP/bin/release/TNP.exe" and run it. 
+
+*Download packages also.
+
 *Login using admin and password.
+
 *Perform required operations.
 
 
