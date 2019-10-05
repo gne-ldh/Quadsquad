@@ -31,17 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(control));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -65,30 +69,42 @@
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.groupBox1.Location = new System.Drawing.Point(23, 113);
+            this.groupBox1.Location = new System.Drawing.Point(23, 219);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(619, 688);
+            this.groupBox1.Size = new System.Drawing.Size(619, 582);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select";
             // 
-            // comboBox2
+            // button1
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(248, 216);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(349, 33);
-            this.comboBox2.TabIndex = 1;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(188, 474);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(236, 104);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox3
+            // label4
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(248, 353);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(349, 33);
-            this.comboBox3.TabIndex = 2;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(49, 353);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 29);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Backlock";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(49, 216);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 29);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Marks";
             // 
             // label1
             // 
@@ -107,35 +123,23 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Branch";
             // 
-            // label3
+            // comboBox3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 216);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 29);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Marks";
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(248, 353);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(349, 33);
+            this.comboBox3.TabIndex = 2;
             // 
-            // label4
+            // comboBox2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 353);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 29);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Backlock";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(188, 474);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 104);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(248, 216);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(349, 33);
+            this.comboBox2.TabIndex = 1;
             // 
             // label5
             // 
@@ -156,6 +160,35 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(670, 688);
             this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.groupBox2.Location = new System.Drawing.Point(23, 113);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(619, 100);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Search Teacher";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(268, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(265, 28);
+            this.textBox1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(91, 57);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 24);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Student Roll No.";
             // 
             // control
             // 
@@ -163,6 +196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1351, 813);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
@@ -172,6 +206,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +226,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
