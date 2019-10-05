@@ -18,6 +18,8 @@ Steps to execute:
 
 *Download packages also.
 
+*Download 127_0_0_1.sql and import it in ' localhost/phpmyadmin '
+
 *Login using admin and password.
 
 *Perform required operations.
