@@ -3,10 +3,14 @@
 
 This application will help the tnp to select among eligible candidates. It can be used to filter students on basis of their department, marks. This application can be used completely offline with an sql database set up. 
 
+### BUILT
+
 It has used following applications:
 
 1. XAMPP for database and mysql
 2. Visual Studio for coding and compiling.
+
+### DEPLOYMENT 
 
 Steps to execute:
 
@@ -17,6 +21,10 @@ Steps to execute:
 *Login using admin and password.
 
 *Perform required operations.
+
+### LICENSE
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 
 # PARKING PROBLEM
