@@ -10,7 +10,7 @@ It has used following applications:
 
 Steps to execute:
 
-*Navigate to the 'bin/release/TNP.exe' and run it. 
+*Navigate to the "TNP/bin/release/TNP.exe" and run it. 
 *Login using admin and password.
 *Perform required operations.
 
