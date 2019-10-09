@@ -16,13 +16,13 @@ Steps to execute:
 
 *Navigate to the "TNP/bin/release/TNP.exe" and run it. 
 
-*Download packages also.
+*Download folder 'packages' also.
 
-*Download admins.sql and import it in ' localhost/phpmyadmin '
+*Download admins.sql and import it in ' localhost/phpmyadmin ' of xampp server.
 
-*Login using admin and password.
+*Login using username="admin" and password="password"
 
-*Perform required operations.
+*Perform required operations by applying filters.
 
 ### LICENSE
 
