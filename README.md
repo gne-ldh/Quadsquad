@@ -31,7 +31,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 # PARKING PROBLEM
 
-This application will help parking space provider to manage parking space by first asking maximum capacity of parking.
+This application will help the parking space provider to manage parking space by first asking for maximum parking capacity.
 The code is written in python using following frameworks:
 
 a. numpy
@@ -40,4 +40,4 @@ b. argparse
 
 c. opencv
 
-this will monitor incoming and outgoing traffic using sensors and update available parking space accorsingly.
+this will monitor incoming and outgoing traffic using sensors and update available parking space accordingly.
